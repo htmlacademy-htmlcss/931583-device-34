@@ -86,7 +86,8 @@ body {
 /* HEADER */
 .page-header {
   padding: 0 60px 23px;
-  background-color: #FFE17F;
+  background: #ffe17f;
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 21px, #ffe17f 21px);
 }
 
 .navigation-logo {
@@ -94,19 +95,82 @@ body {
   margin-bottom: 30px;
 }
 
+.navigation-user-container {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .navigation-user {
   margin: 0;
-  margin-bottom: 30px;
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.navigation-user-item:nth-child(2) {
-  margin-right: auto;
+.navigation-user-left {
+  max-width: 660px;
+ }
+
+.navigation-user-right {
+ max-width: 310px;
+}
+
+.navigation-user-right .navigation-user-item {
+  margin-left: 61px;
+}
+
+.navigation-search {
+  display: flex;
+}
+
+.navigation-search-field {
+  min-height: 40px;
+  width: 359px;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 48px;
+  border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
+  background-color: #ffe17f;
+}
+
+.navigation-search-field:active,
+.navigation-search-field:hover,
+.navigation-search-field:focus {
+  outline: none;
+}
+
+.navigation-search-field[placeholder] {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation-search-field[placeholder]:hover,
+.navigation-search-field[placeholder]:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
 }
 
 .navigation-search-button {
+  min-height: 40px;
+  margin: 0;
+  margin-right: 53px;
+  padding: 8px 54px 8px 56px;
+  border: 2px solid #000000;
+  border-left: none;
+  border-radius:  0 50px 50px 0;
+  background-color: #ffe17f;
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -117,17 +181,26 @@ body {
   text-decoration: none;
 }
 
-.navigation-menu {
+/* Navigation Menu */
+.navigation-menu-container {
+  display: flex;
+  justify-content: space-between;
   min-height: 50px;
+  align-items: center;
+}
+
+.navigation-menu {
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 700px;
   list-style-type: none;
 }
 
-.navigation-menu-item:first-child {
-  margin-right: auto;
+.navigation-menu-item {
+  margin-left: 45px;
 }
 
 .navigation-menu-link {

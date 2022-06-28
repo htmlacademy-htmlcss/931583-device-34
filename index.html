@@ -18,18 +18,21 @@
           alt="Логотип интернет-магазина Девайс">
 
         <!-- Navigation User -->
-        <ul class="navigation-user">
+        <div class="navigation-user-container">
+        <ul class="navigation-user navigation-user-left">
           <li class="navigation-user-item">
             <form class="navigation-search" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="search-field">Поиск.</label>
               <input class="navigation-search-field" type="search" name="search" id="search-field"
                 placeholder="Текст поиска">
-              <button class="navigation-search-button" type="button">Найти</button>
+              <button class="navigation-search-button" type="submit">Найти</button>
             </form>
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">Войти</a>
           </li>
+        </ul>
+        <ul class="navigation-user navigation-user-right">
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">Сравнить</a>
           </li>
@@ -37,12 +40,13 @@
             <a class="navigation-user-link" href="#">Корзина</a>
           </li>
         </ul>
+      </div>
+
 
         <!-- Navigation Menu -->
+        <div class="navigation-menu-container">
+        <a class="navigation-menu-link navigation-catalog-link">Каталог товаров</a>
         <ul class="navigation-menu">
-          <li class="navigation-menu-item">
-            <a class="navigation-menu-link">Каталог товаров</a>
-          </li>
           <li class="navigation-menu-item">
             <a class="navigation-menu-link">Доставка</a>
           </li>
@@ -53,6 +57,7 @@
             <a class="navigation-menu-link">Контакты</a>
           </li>
         </ul>
+      </div>
 
       </nav>
     </header>

@@ -19,45 +19,45 @@
 
         <!-- Navigation User -->
         <div class="navigation-user-container">
-        <ul class="navigation-user navigation-user-left">
-          <li class="navigation-user-item">
-            <form class="navigation-search" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="visually-hidden" for="search-field">Поиск.</label>
-              <input class="navigation-search-field" type="search" name="search" id="search-field"
-                placeholder="Текст поиска">
-              <button class="navigation-search-button" type="submit">Найти</button>
-            </form>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Войти</a>
-          </li>
-        </ul>
-        <ul class="navigation-user navigation-user-right">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Сравнить</a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Корзина</a>
-          </li>
-        </ul>
-      </div>
+          <ul class="navigation-user navigation-user-left">
+            <li class="navigation-user-item">
+              <form class="navigation-search" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="visually-hidden" for="search-field">Поиск.</label>
+                <input class="navigation-search-field" type="search" name="search" id="search-field"
+                  placeholder="Текст поиска">
+                <button class="navigation-search-button" type="submit">Найти</button>
+              </form>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Войти</a>
+            </li>
+          </ul>
+          <ul class="navigation-user navigation-user-right">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
 
 
         <!-- Navigation Menu -->
         <div class="navigation-menu-container">
-        <a class="navigation-menu-link navigation-catalog-link">Каталог товаров</a>
-        <ul class="navigation-menu">
-          <li class="navigation-menu-item">
-            <a class="navigation-menu-link">Доставка</a>
-          </li>
-          <li class="navigation-menu-item">
-            <a class="navigation-menu-link">Гарантия</a>
-          </li>
-          <li class="navigation-menu-item">
-            <a class="navigation-menu-link">Контакты</a>
-          </li>
-        </ul>
-      </div>
+          <a class="navigation-menu-link navigation-catalog-link">Каталог товаров</a>
+          <ul class="navigation-menu">
+            <li class="navigation-menu-item">
+              <a class="navigation-menu-link">Доставка</a>
+            </li>
+            <li class="navigation-menu-item">
+              <a class="navigation-menu-link">Гарантия</a>
+            </li>
+            <li class="navigation-menu-item">
+              <a class="navigation-menu-link">Контакты</a>
+            </li>
+          </ul>
+        </div>
 
       </nav>
     </header>
@@ -82,6 +82,7 @@
               </button>
             </div>
             <div class="slider-content-wrap">
+              <span class="slider-number">01</span>
               <b class="slider-slogan">Порхает как бабочка, жалит как пчела!</b>
               <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.</p>
@@ -150,36 +151,41 @@
       <!-- Advantages -->
       <section class="advantages">
         <div class="page-container">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <dl class="advantages-list">
-          <dt class="advantages-term">
-            <a class="button-link">Доставка</a>
-          </dt>
-          <dd class="advantages-content">
-            <h3 class="main-title">Доставка</h3>
-            <p class="advantages-content-desc">Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно! Ведь
-              мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </dd>
-          <dt class="advantages-term">
-            <a class="button-link">Гарантия</a>
-          </dt>
-          <dd class="advantages-content">
-            <h3 class="main-title">Гарантия</h3>
-            <p class="advantages-content-desc">Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно! Ведь
-              мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </dd>
-          <dt class="advantages-term">
-            <a class="button-link">Кредит</a>
-          </dt>
-          <dd class="advantages-content">
-            <h3 class="main-title">Кредит</h3>
-            <p class="advantages-content-desc">Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно! Ведь
-              мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </dd>
-        </dl>
+          <div class="advantages-container">
+            <h2 class="visually-hidden">Наши преимущества</h2>
+            <ul class="advantages-link-list">
+              <li class="advantages-link-item advantages-item-current">
+                <a class="button-link advantages-link-current">Доставка</a>
+              </li>
+
+              <li class="advantages-link-item">
+                <a class="button-link">Гарантия</a>
+              </li>
+
+              <li class="advantages-link-item">
+                <a class="button-link">Кредит</a>
+              </li>
+            </ul>
+            <div class="advantages-content">
+
+              <h3 class="advantages-title">Доставка</h3>
+              <p class="advantages-desc">Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно! Ведь
+                мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+            <div class="advantages-content visually-hidden">
+              <h3 class="advantages-title">Гарантия</h3>
+              <p class="advantages-desc">Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно! Ведь
+                мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+            <div class="advantages-content visually-hidden">
+              <h3 class="advantages-title">Кредит</h3>
+              <p class="advantages-desc">Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно! Ведь
+                мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -189,11 +195,7 @@
           <h2 class="visually-hidden">Информация о магазине</h2>
           <!-- Aside -->
           <aside class="info-aside">
-            <b class="info-aside-text">Доставим редкий товар под заказ</b>
-            <button class="tooltip-button">
-              <span class="visually-hidden">Прочитать дополнитульную информацию.</span>
-              i
-            </button>
+            <a class="info-aside-link" href="#">Доставим редкий товар под заказ</a>
           </aside>
           <!-- About Us Article -->
           <article class="info-article">
@@ -237,16 +239,16 @@
       <!-- Newsletter -->
       <section class="newsletter">
         <div class="page-container">
-        <h2 class="main-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-desc">Еженедельный дайджест с обзорами новинок,
-          длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post"">
+          <h2 class="main-title">Подпишитесь на рассылку</h2>
+          <p class="newsletter-desc">Еженедельный дайджест с обзорами новинок,
+            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post"">
           <label class=" visually-hidden" for="newsletter-email">E-mail.</label>
-          <input class="newsletter-field" type="email" name="newsletter-email" id="newsletter-email"
-            placeholder="Ваш e-mail">
-          <button class="newsletter-button" type="submit">Подписаться</button>
-        </form>
-        <span class="newsletter-text">Это бесплатно</span>
+            <input class="newsletter-field" type="email" name="newsletter-email" id="newsletter-email"
+              placeholder="Ваш e-mail">
+            <button class="newsletter-button" type="submit">Подписаться</button>
+          </form>
+          <span class="newsletter-text">Это бесплатно</span>
         </div>
       </section>
     </main>
@@ -255,49 +257,51 @@
     <footer class="page-footer">
       <div class="page-container">
         <h2 class="visually-hidden">Дополнительная информация</h2>
-        <!-- Address -->
-        <div class="footer-address">
-          <img class="footer-logo" src="/images/logo-footer.svg" width="145" height="36"
-            alt="Логотип интернет-магазина Девайс">
-          <h3 class="visually-hidden">Адрес магазина</h3>
-          <p class="footer-desc">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        </div>
+        <div class="footer-container">
+          <!-- Address -->
+          <div class="footer-address">
+            <img class="footer-logo" src="/images/logo-footer.svg" width="145" height="36"
+              alt="Логотип интернет-магазина Девайс">
+            <h3 class="visually-hidden">Адрес магазина</h3>
+            <p class="footer-desc">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          </div>
 
-        <!-- Footer Links -->
-        <div class="footer-links">
-          <h3 class="visually-hidden">Полезные ссылки</h3>
-          <ul class="footer-links-list">
-            <li class="footer-links-item">
-              <a class="footer-link" href="#">Доставка</a>
-            </li>
-            <li class="footer-links-item">
-              <a class="footer-link" href="#">Гарантия</a>
-            </li>
-            <li class="footer-links-item">
-              <a class="footer-link" href="#">Контакты</a>
-            </li>
-          </ul>
+          <!-- Footer Links -->
+          <div class="footer-links">
+            <h3 class="visually-hidden">Полезные ссылки</h3>
+            <ul class="footer-links-list">
+              <li class="footer-links-item">
+                <a class="footer-link" href="#">Доставка</a>
+              </li>
+              <li class="footer-links-item">
+                <a class="footer-link" href="#">Гарантия</a>
+              </li>
+              <li class="footer-links-item">
+                <a class="footer-link" href="#">Контакты</a>
+              </li>
+            </ul>
 
-          <!-- Social -->
-          <h3 class="visually-hidden">Наши социальные сети</h3>
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-link" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Telegram.</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Youtube.</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="https://twitter.com/htmlacademy_ru">
-                <span class="visually-hidden">Twitter.</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+            <!-- Social -->
+            <h3 class="visually-hidden">Наши социальные сети</h3>
+            <ul class="social-list">
+              <li class="social-item">
+                <a class="social-link" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Telegram.</span>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Youtube.</span>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="https://twitter.com/htmlacademy_ru">
+                  <span class="visually-hidden">Twitter.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
 
         <!-- Phonenumber -->
         <div class="footer-phone">
@@ -308,6 +312,7 @@
               alt="Логотип HTML Academy">
           </a>
         </div>
+      </div>
       </div>
     </footer>
   </body>

@@ -70,7 +70,7 @@ body {
 
 .button-link {
   display: block;
-  padding: 10px 5px;
+  padding: 10px 0;
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 18px;
@@ -80,14 +80,15 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 16px, #ffe17f 16px, #ffe17f 24px, rgba(255, 255, 255, 0) 24px);
 }
 
 
 /* HEADER */
 .page-header {
-  padding: 0 60px 23px;
+  padding: 0 60px;
   background: #ffe17f;
-  background: linear-gradient(180deg, #ffffff 0%, #ffffff 21px, #ffe17f 21px);
+  background: linear-gradient(180deg, #ffffff 0, #ffffff 21px, #ffe17f 21px);
 }
 
 .navigation-logo {
@@ -112,10 +113,10 @@ body {
 
 .navigation-user-left {
   max-width: 660px;
- }
+}
 
 .navigation-user-right {
- max-width: 310px;
+  max-width: 310px;
 }
 
 .navigation-user-right .navigation-user-item {
@@ -168,12 +169,13 @@ input[type="search"]::-webkit-search-cancel-button {
   padding: 8px 54px 8px 56px;
   border: 2px solid #000000;
   border-left: none;
-  border-radius:  0 50px 50px 0;
+  border-radius: 0 50px 50px 0;
   background-color: #ffe17f;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  cursor: pointer;
 }
 
 .navigation-user-link {
@@ -183,9 +185,9 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* Navigation Menu */
 .navigation-menu-container {
+  min-height: 50px;
   display: flex;
   justify-content: space-between;
-  min-height: 50px;
   align-items: center;
 }
 
@@ -204,6 +206,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .navigation-menu-link {
+  display: block;
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 18px;
@@ -235,27 +238,27 @@ input[type="search"]::-webkit-search-cancel-button {
 .slider-container {
   display: flex;
   justify-content: space-between;
+  background: linear-gradient(180deg, #ffe17f 0%, #ffe17f 150px, #ffffff 150px);
 }
 
 .slider-content-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 560px;
   padding-top: 121px;
   padding-bottom: 38px;
 }
 
-.slider-buttons-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 49px;
-}
-
-.slider-flip-list {
-  width: 76px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
+.slider-number {
+  position: absolute;
+  top: 87px;
+  right: 49px;
+  font-family: 'Rubik';
+  font-size: 180px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
 }
 
 .slider-slogan {
@@ -265,6 +268,7 @@ input[type="search"]::-webkit-search-cancel-button {
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 29px;
+  z-index: 1;
 }
 
 .slider-description {
@@ -294,6 +298,37 @@ input[type="search"]::-webkit-search-cancel-button {
   line-height: 30px;
 }
 
+.slider-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 49px;
+}
+
+.slider-buttons-container .button-link {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.slider-flip-list {
+  width: 76px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-flip-button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin: 0;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
 /* Popular Directory */
 .popular-directory {
   font-family: 'Raleway';
@@ -302,7 +337,8 @@ input[type="search"]::-webkit-search-cancel-button {
   line-height: 24px;
   letter-spacing: -0.02em;
   text-decoration: none;
-  color: #000000
+  color: #000000;
+  margin-bottom: 70px;
 }
 
 .popular-directory-list {
@@ -324,18 +360,92 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* Advatages */
 .advantages {
-  background-color: #f0f0f0;
+  background: linear-gradient(180deg, #ffffff 0, #ffffff 102px, #f0f0f0 102px);
+  padding-bottom: 72px;
+  margin-bottom: 70px;
+}
+
+.advantages-container {
+  display: flex;
+}
+
+.advantages-link-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 287px;
+  margin: 0;
+  padding: 64px 0 65px;
+  list-style-type: none;
+  border-right: 7px solid #000000;
+}
+
+.advantages-link-item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.advantages-link-item .button-link {
+  width: 160px;
+}
+
+.advantages-item-current {
+  background-color: #000000;
+}
+
+.advantages-link-item .advantages-link-current {
+  background: none;
+  background-color: #000000;
+  color: #ffe17f;
+}
+
+.advantages-content {
+  padding: 72.5px 63px 72.5px 116px;
+  flex-grow: 1;
+}
+
+.advantages-title {
+  width: 452px;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+.advantages-desc {
+  width: 452px;
+  margin: 0;
+  color:#444444
 }
 
 /* Shop Information */
-.info-aside-text {
+
+.info-aside-link {
+  display: block;
+  position: relative;
+  padding: 40px 125px;
+  background-color: #f0f0f0;
+  color: #000000;
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 20px;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.info-aside-link::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 125px;
+  height: 100px;
+  background: url(/images/icons/delivery.svg) center no-repeat;
+  background-color: #ffe17f;
+  content: '';
 }
 
 .info-title {
@@ -389,6 +499,21 @@ input[type="search"]::-webkit-search-cancel-button {
 .page-footer {
   background-color: #444444;
   color: #ffffff;
+  padding: 62px 0 61px;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-address {
+  width: 239px;
+  margin-right: 119px;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 35px;
 }
 
 .footer-desc {
@@ -396,7 +521,24 @@ input[type="search"]::-webkit-search-cancel-button {
   line-height: 20px;
 }
 
+.footer-links {
+  width: 444px;
+  margin-top: 75px;
+  margin-right: 183px;
+}
+
+.footer-links-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 62px;
+  padding: 0;
+  list-style-type: none;
+}
+
 .footer-link {
+  display: block;
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 18px;
@@ -407,11 +549,28 @@ input[type="search"]::-webkit-search-cancel-button {
   color: #ffffff;
 }
 
+.social-list {
+  display: flex;
+  margin: 0;
+  padding: ;
+  list-style-type: none;
+}
+
+.footer-phone {
+  margin-top: 78px;
+}
+
 .footer-phone-link {
+  display: block;
+  margin-bottom: 63px;
   font-size: 16px;
   line-height: 20px;
   text-decoration-line: underline;
   color: #ffffff;
+}
+
+.htmlacademy-link {
+  display: block;
 }
 
 

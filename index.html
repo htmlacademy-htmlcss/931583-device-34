@@ -29,15 +29,15 @@
               </form>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">Войти</a>
+              <a class="navigation-user-link navigation-user-login" href="#">Войти</a>
             </li>
           </ul>
           <ul class="navigation-user navigation-user-right">
             <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">Сравнить</a>
+              <a class="navigation-user-link navigation-user-compare" href="#">Сравнить</a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">Корзина</a>
+              <a class="navigation-user-link navigation-user-cart" href="#">Корзина</a>
             </li>
           </ul>
         </div>
@@ -74,12 +74,14 @@
             <div class="slider-image-wrap">
               <img class="slider-image" src="/images/slider/slider-1.png" width="560" height="560"
                 alt="Квадракоптер с мощным лазером">
-              <button class="toggle-button toggle-button-prev" type="button">
-                <span class="visually-hidden">Предыдущий слайд.</span>
-              </button>
-              <button class="toggle-button toggle-button-next" type="button">
-                <span class="visually-hidden">Следующий слайд.</span>
-              </button>
+              <div class="toggle-button-wrap">
+                <button class="toggle-button toggle-button-prev" type="button">
+                  <span class="visually-hidden">Предыдущий слайд.</span>
+                </button>
+                <button class="toggle-button toggle-button-next" type="button">
+                  <span class="visually-hidden">Следующий слайд.</span>
+                </button>
+              </div>
             </div>
             <div class="slider-content-wrap">
               <span class="slider-number">01</span>
@@ -90,7 +92,7 @@
                 <a class="button-link" href="#">Подробнее</a>
                 <ol class="slider-flip-list">
                   <li class="slider-flip-item">
-                    <button class="slider-flip-button slider-flip-button-current" type="button">
+                    <button class="slider-flip-button slider-flip-current" type="button">
                       <span class="visually-hidden">1 слайд.</span>
                     </button>
                   </li>
@@ -127,22 +129,22 @@
           <h2 class="visually-hidden">Популярные разделы каталога</h2>
           <ul class="popular-directory-list">
             <li class="popular-directory-item">
-              <a class="popular-directory" href="#">Виртуальная реальность</a>
+              <a class="popular-directory-link directory-virtual" href="#">Виртуальная реальность</a>
             </li>
             <li class="popular-directory-item">
-              <a class="popular-directory" href="#">Моноподы на селфи</a>
+              <a class="popular-directory-link directory-monopod" href="#">Моноподы на селфи</a>
             </li>
             <li class="popular-directory-item">
-              <a class="popular-directory" href="#">Экшн-камеры</a>
+              <a class="popular-directory-link directory-action-camera" href="#">Экшн-камеры</a>
             </li>
             <li class="popular-directory-item">
-              <a class="popular-directory" href="#">Фитнес-браслеты</a>
+              <a class="popular-directory-link directory-fitness-watch" href="#">Фитнес-браслеты</a>
             </li>
             <li class="popular-directory-item">
-              <a class="popular-directory" href="#">Умные часы</a>
+              <a class="popular-directory-link directory-smart-watch" href="#">Умные часы</a>
             </li>
             <li class="popular-directory-item">
-              <a class="popular-directory" href="#">Квадракоптеры</a>
+              <a class="popular-directory-link directory-quadracopter" href="#">Квадракоптеры</a>
             </li>
           </ul>
         </div>
@@ -155,18 +157,18 @@
             <h2 class="visually-hidden">Наши преимущества</h2>
             <ul class="advantages-link-list">
               <li class="advantages-link-item advantages-item-current">
-                <a class="button-link advantages-link-current">Доставка</a>
+                <a class="button-link advantages-link-current" href="#">Доставка</a>
               </li>
 
               <li class="advantages-link-item">
-                <a class="button-link">Гарантия</a>
+                <a class="button-link" href="#">Гарантия</a>
               </li>
 
               <li class="advantages-link-item">
-                <a class="button-link">Кредит</a>
+                <a class="button-link" href="#">Кредит</a>
               </li>
             </ul>
-            <div class="advantages-content">
+            <div class="advantages-content advantages-content-delivery">
 
               <h3 class="advantages-title">Доставка</h3>
               <p class="advantages-desc">Мы с удовольствием доставим ваш товар прямо
@@ -201,7 +203,8 @@
           <div class="info-container">
             <article class="info-article">
               <h3 class="info-title">О нас</h3>
-              <p class="info-desc">Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом из нас.
+              <p class="info-desc">Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом из
+                нас.
               </p>
               <p class="info-desc">Мы можем доставить ваш товар в самые отдалённые<br> уголки России транспортными
                 компаниями:
@@ -244,9 +247,9 @@
       <section class="newsletter">
         <div class="page-container">
           <div class="newsletter-container">
-          <h2 class="newsletter-title">Подпишитесь<br> на рассылку</h2>
-          <p class="newsletter-desc">Еженедельный дайджест с обзорами новинок,<br>
-            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            <h2 class="newsletter-title">Подпишитесь<br> на рассылку</h2>
+            <p class="newsletter-desc">Еженедельный дайджест с обзорами новинок,<br>
+              длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           </div>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post"">
           <label class=" visually-hidden" for="newsletter-email">E-mail.</label>

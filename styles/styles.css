@@ -1140,6 +1140,96 @@ input[type="search"]::-webkit-search-cancel-button {
   flex-direction: column;
 }
 
+/* range */
+.range {
+  padding-top: 10px;
+  padding-bottom: 33px;
+}
+
+.range-scale {
+  position: relative;
+  height: 2px;
+  background-color: #dcdcdc;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000000;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #f0f0f0;
+  border: 2px solid #242424;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  border-color: #7F7F7F;
+}
+
+.range-toggle:active {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.range-toggle:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -9px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -9px;
+}
+
+.range-wrapper-inputs {
+  position: relative;
+}
+
+.range-label {
+  position: absolute;
+  width: 80px;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  opacity: 0.3;
+}
+
+.range-label-min {
+  left: -18px;
+  top: 15px;
+}
+
+.range-label-max {
+  right: -40px;
+  top: 15px;
+}
+
+.range-input {
+  max-width: 51px;
+  font: inherit;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 /* chechbox */
 .control-checkbox {
   position: relative;
@@ -1180,7 +1270,9 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .control-input[type="checkbox"]:disabled + .control-mark,
-.control-input[type="checkbox"]:disabled ~ .control-label {
+.control-input[type="checkbox"]:disabled ~ .control-label,
+.control-input[type="checkbox"]:hover:disabled + .control-mark,
+.control-input[type="checkbox"]:hover:disabled ~ .control-label {
   opacity: 0.1;
 }
 
@@ -1191,11 +1283,61 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* radio */
 .control-radio {
+  position: relative;
+}
+
+.control-radio .control-label {
   margin-bottom: 20px;
+  padding-left: 36px;
   font-family: 'Rubik';
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+}
+
+.control-radio .control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cccccc;
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark {
+  border-color: #000000;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-input[type="radio"]:not(:checked):hover + .control-mark,
+.control-input[type="radio"]:not(:checked):hover ~ .control-label {
+  opacity: 0.6;
+}
+
+.control-input[type="radio"]:not(:checked):active + .control-mark,
+.control-input[type="radio"]:not(:checked):active ~ .control-label {
+  opacity: 0.3;
+}
+
+.control-input[type="radio"]:disabled + .control-mark,
+.control-input[type="radio"]:disabled ~ .control-label {
+  opacity: 0.1;
+}
+
+.control-input[type="radio"]:focus-visible + .control-mark {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .filter-button {

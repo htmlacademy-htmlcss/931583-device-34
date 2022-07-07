@@ -151,7 +151,7 @@
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control-checkbox">
-                      <input class="visually-hidden control-input" type="checkbox" name="pink-color" disabled>
+                      <input class="visually-hidden control-input" type="checkbox" name="pink-color">
                       <span class="control-mark"></span>
                       <span class="control-label">Розовый</span>
                     </label>
@@ -196,13 +196,11 @@
                 </select>
               </div>
               <div class="button-order-wrap">
-                <button class="button-order">
+                <button class="button-order" type="button">
                   <span class="visually-hidden">Прямой порядок товаров</span>
-                  x
                 </button>
-                <button class="button-order reverse-button-order">
+                <button class="button-order reverse-button-order" type="button">
                   <span class="visually-hidden">Обратный порядок товаров</span>
-                  x
                 </button>
               </div>
             </div>
@@ -211,61 +209,77 @@
             <div class="products-pagination-container">
               <ul class="products">
                 <li class="product-item">
-                  <img class="product-image" src="/images/catalog/product-1.jpg" width="360" height="380"
-                    alt="Любительская селфи палка.">
-                  <div class="product-text-wrap">
-                    <h3 class="product-title">Любительская селфи-палка</h3>
-                    <span class="product-price">500 ₽</span>
-                  </div>
+                  <a class="product-link" href="#">
+                    <div class="product-image-wrap">
+                      <img class="product-image" src="/images/catalog/product-1.jpg" width="360" height="380"
+                        alt="Любительская селфи палка.">
+                    </div>
+                    <div class="product-text-wrap">
+                      <h3 class="product-title">Любительская селфи-палка</h3>
+                      <span class="product-price">500 ₽</span>
+                    </div>
+                  </a>
                 </li>
                 <li class="product-item">
-                  <img class="product-image" src="/images/catalog/product-2.jpg" width="360" height="380"
-                    alt="Профессиональная селфи-палка.">
-                  <div class="product-text-wrap">
-                    <h3 class="product-title">Профессиональная селфи-палка </h3>
-                    <span class="product-price">1 500 ₽</span>
-                  </div>
+                  <a class="product-link" href="#">
+                    <div class="product-image-wrap">
+                      <img class="product-image" src="/images/catalog/product-2.jpg" width="360" height="380"
+                        alt="Профессиональная селфи-палка.">
+                    </div>
+                    <div class="product-text-wrap">
+                      <h3 class="product-title">Профессиональная селфи-палка </h3>
+                      <span class="product-price">1 500 ₽</span>
+                    </div>
+                  </a>
                 </li>
                 <li class="product-item">
-                  <img class="product-image" src="/images/catalog/product-3.jpg" width="360" height="380"
-                    alt="Непотопляемая селфи-палка.">
-                  <div class="product-text-wrap">
-                    <h3 class="product-title">Непотопляемая селфи-палка</h3>
-                    <span class="product-price">2 500 ₽</span>
-                  </div>
+                  <a class="product-link" href="#">
+                    <div class="product-image-wrap">
+                      <img class="product-image" src="/images/catalog/product-3.jpg" width="360" height="380"
+                        alt="Непотопляемая селфи-палка.">
+                    </div>
+                    <div class="product-text-wrap">
+                      <h3 class="product-title">Непотопляемая селфи-палка</h3>
+                      <span class="product-price">2 500 ₽</span>
+                    </div>
+                  </a>
                 </li>
                 <li class="product-item">
-                  <img class="product-image" src="/images/catalog/product-4.jpg" width="360" height="380"
-                    alt="Селфи-палка «Следуй за мной».">
-                  <div class="product-text-wrap">
-                    <h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
-                    <span class="product-price">1 500 ₽</span>
-                  </div>
+                  <a class="product-link" href="#">
+                    <div class="product-image-wrap">
+                      <img class="product-image" src="/images/catalog/product-4.jpg" width="360" height="380"
+                        alt="Селфи-палка «Следуй за мной».">
+                    </div>
+                    <div class="product-text-wrap">
+                      <h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
+                      <span class="product-price">1 500 ₽</span>
+                    </div>
+                  </a>
                 </li>
               </ul>
 
               <!-- Pagination -->
               <button class="pagination-show-more" type="button">Загрузить ещё</button>
               <div class="pagination">
-                <a class="pagination-prev" href="#">Назад</a>
+                <a class="pagination-link" href="#">Назад</a>
                 <ul class="pagination-list">
                   <li class="pagination-item">
-                    <a class="button-pagination" href="#">1</a>
+                    <a class="pagination-numbers" href="#">1</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="button-pagination" href="#">2</a>
+                    <a class="pagination-numbers" href="#">2</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="button-pagination" href="#">3</a>
+                    <a class="pagination-numbers" href="#">3</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="button-pagination" href="#">...</a>
+                    <a class="pagination-numbers" href="#">...</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="button-pagination" href="#">15</a>
+                    <a class="pagination-numbers" href="#">15</a>
                   </li>
                 </ul>
-                <a class="pagination-next" href="#">Вперёд</a>
+                <a class="pagination-link" href="#">Вперёд</a>
               </div>
             </div>
           </div>

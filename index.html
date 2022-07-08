@@ -127,8 +127,7 @@
           <!-- Slide 2 -->
           <div class="slider-container visually-hidden slide-hidden">
             <div class="slider-image-wrap">
-              <img class="slider-image" src="/images/slider/slider-2.png" width="560" height="560"
-                alt="Фитнес-браслет">
+              <img class="slider-image" src="/images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
               <div class="toggle-button-wrap">
                 <button class="toggle-button toggle-button-prev" type="button">
                   <span class="visually-hidden">Предыдущий слайд.</span>
@@ -141,7 +140,8 @@
             <div class="slider-content-wrap">
               <span class="slider-number">02</span>
               <b class="slider-slogan">Худеем правильно!</b>
-              <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия
+                и соблюдать диету.</p>
               <div class="slider-buttons-container">
                 <a class="button-link" href="#">Подробнее</a>
                 <ol class="slider-flip-list">
@@ -174,8 +174,7 @@
           <!-- Slide 3 -->
           <div class="slider-container visually-hidden slide-hidden">
             <div class="slider-image-wrap">
-              <img class="slider-image" src="/images/slider/slider-3.png" width="560" height="560"
-                alt="Селфи-палка">
+              <img class="slider-image" src="/images/slider/slider-3.png" width="560" height="560" alt="Селфи-палка">
               <div class="toggle-button-wrap">
                 <button class="toggle-button toggle-button-prev" type="button">
                   <span class="visually-hidden">Предыдущий слайд.</span>
@@ -188,7 +187,8 @@
             <div class="slider-content-wrap">
               <span class="slider-number">03</span>
               <b class="slider-slogan">Делай селфи,как Бен Стиллер! </b>
-              <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+              <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
+                Карл!) метров длиной и весом всего 5 кг.</p>
               <div class="slider-buttons-container">
                 <a class="button-link" href="#">Подробнее</a>
                 <ol class="slider-flip-list">
@@ -547,6 +547,50 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-container">
+      <div class="modal modal-delivery">
+        <form class="modal-delivery-form" method="post">
+          <div class="modal-element-wrap modal-title-wrap">
+            <h2 class="modal-title">Доставка под заказ</h2>
+            <button class="modal-close-button" type="button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </div>
+          <div class="modal-element-wrap modal-name-wrap">
+            <label class="modal-label" for="modal-name">Ваше имя:</label>
+            <input class="modal-field" type="text" name="modal-name" id="modal-name"
+              placeholder="Введите имя" disabled>
+          </div>
+          <div class="modal-element-wrap modal-email-wrap">
+            <label class="modal-label" for="modal-email">Ваш e-mail:</label>
+            <input class="modal-field modal-field-error" type="email" name="modal-email" id="modal-email" placeholder="Введите e-mail">
+            <span class="modal-email-text">Забавный у вас адрес</span>
+          </div>
+          <div class="modal-element-wrap modal-desc-wrap">
+            <label class="modal-label" for="modal-desc">Что нужно привести:</label>
+            <input class="modal-field" type="text" name="modal-desc" id="modal-desc" placeholder="В свободной форме">
+          </div>
+          <div class="modal-element-wrap modal-quantity-wrap">
+            <label class="modal-label">Количество:
+              <a class="button-tooltip">
+                <span class="visually-hidden">Кнопка с доп.информацией</span>
+              </a>
+            </label>
+            <div class="quantity-button-wrap">
+              <button class="button-quantity button-increase" type="button">
+                <span class="visually-hidden">Уменьшить количество</span>
+              </button>
+              <input class="modal-quantity-field" type="number" value="1" name="quantity" id="quantity">
+              <button class="button-quantity button-decrease" type="button">
+                <span class="visually-hidden">Увеличить количество</span>
+              </button>
+            </div>
+          </div>
+          <button class="modal-button" type="button">Отправить</button>
+        </form>
+      </div>
+    </div>
   </body>
 
 </html>

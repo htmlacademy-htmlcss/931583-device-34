@@ -548,7 +548,7 @@
       </div>
     </footer>
 
-    <div class="modal-container">
+    <div class="modal-container modal-container-hidden">
       <div class="modal modal-delivery">
         <form class="modal-delivery-form" method="post">
           <div class="modal-element-wrap modal-title-wrap">
@@ -558,24 +558,36 @@
             </button>
           </div>
           <div class="modal-element-wrap modal-name-wrap">
-            <label class="modal-label" for="modal-name">Ваше имя:</label>
-            <input class="modal-field" type="text" name="modal-name" id="modal-name"
-              placeholder="Введите имя" disabled>
+            <label for="modal-name">
+              <span class="modal-label">Ваше имя:</span>
+            </label>
+            <input class="modal-field" type="text" name="modal-name" id="modal-name" placeholder="Введите имя">
           </div>
           <div class="modal-element-wrap modal-email-wrap">
-            <label class="modal-label" for="modal-email">Ваш e-mail:</label>
-            <input class="modal-field modal-field-error" type="email" name="modal-email" id="modal-email" placeholder="Введите e-mail">
+            <label for="modal-email">
+              <span class="modal-label">Ваш e-mail:</span>
+            </label>
+            <input class="modal-field modal-field-error" type="email" name="modal-email" id="modal-email"
+              placeholder="Введите e-mail">
             <span class="modal-email-text">Забавный у вас адрес</span>
           </div>
           <div class="modal-element-wrap modal-desc-wrap">
-            <label class="modal-label" for="modal-desc">Что нужно привести:</label>
+            <label for="modal-desc">
+              <span class="modal-label">Что нужно привести:</span>
+            </label>
             <input class="modal-field" type="text" name="modal-desc" id="modal-desc" placeholder="В свободной форме">
           </div>
           <div class="modal-element-wrap modal-quantity-wrap">
-            <label class="modal-label">Количество:
-              <a class="button-tooltip">
-                <span class="visually-hidden">Кнопка с доп.информацией</span>
-              </a>
+            <label for="quantity">
+              <span class="modal-label">Количество:
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <span class="visually-hidden">Дополнительная информация</span>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                    к провозу багажа.</span>
+                </span>
+              </span>
             </label>
             <div class="quantity-button-wrap">
               <button class="button-quantity button-increase" type="button">

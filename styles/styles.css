@@ -1880,6 +1880,11 @@ input[type="search"]::-webkit-search-cancel-button {
   z-index: 10;
 }
 
+/* hide modal */
+.modal-container-hidden {
+  display: none;
+}
+
 .modal {
   position: relative;
   margin: auto;
@@ -1976,6 +1981,18 @@ input[type="search"]::-webkit-search-cancel-button {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.modal-name-wrap .modal-field {
+  background-image: url(/images/icons/modal-login.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.modal-email-wrap .modal-field {
+  background-image: url(/images/icons/modal-email.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
 .modal-field:hover:not(:disabled) {
   background-color: #DCDCDC;
 }
@@ -2021,7 +2038,27 @@ input[type="search"]::-webkit-search-cancel-button {
   cursor: pointer;
 }
 
+.modal-button:hover {
+  background: none;
+  background-color: #ffe17f;
+}
+
+.modal-button:active {
+  background: none;
+  background-color: #ffcc33;
+}
+
+.modal-button:focus-visible {
+  outline-offset: 0;
+  outline: 2px solid #AF4FFF;
+}
+
+.modal-button:disabled {
+  opacity: 0.3;
+}
+
 .modal-quantity-field {
+  position: relative;
   width: 60px;
   padding: 20px 20px;
   font: inherit;
@@ -2031,6 +2068,12 @@ input[type="search"]::-webkit-search-cancel-button {
   background-color: #F0F0F0;
   border: none;
   appearance: textfield;
+}
+
+.modal-quantity-field:active,
+.modal-quantity-field:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #af4fff inset;
 }
 
 .modal-quantity-field::-webkit-outer-spin-button,
@@ -2047,6 +2090,20 @@ input[type="search"]::-webkit-search-cancel-button {
   border: none;
   background-color: #f0f0f0;
   cursor: pointer;
+}
+
+.button-quantity:hover:not(:active):not(:disabled) {
+  background-color: #EBEBEB;
+}
+
+.button-quantity:active:not(:disabled) {
+  opacity: 0.6;
+}
+
+.button-quantity:focus-visible,
+.button-quantity:disabled {
+  outline: none;
+  box-shadow: 0 0 0 2px #af4fff inset;
 }
 
 .button-increase {
@@ -2094,4 +2151,64 @@ input[type="search"]::-webkit-search-cancel-button {
   margin: auto;
   background-color: #000000;
   content: '';
+}
+
+/* Tooltip */
+.modal-quantity-wrap .modal-label {
+  position: relative;
+  padding-right: 34px;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -3px;
+  width: 26px;
+  height: 26px;
+  margin-left: 8px;
+  content: '';
+}
+
+.tooltip-toggle {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border: none;
+  background: url(/images/icons/tooltip.svg) no-repeat center;
+  padding: 0;
+  margin: 0;
+}
+
+.tooltip-text {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 200px;
+  padding: 19px 17px 26px 19px;
+  margin-top: 10px;
+  transform: translateX(-140px);
+  background-color: #242424;
+  z-index: 1;
+  color: #ffffff;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+.tooltip-text:after {
+  content:'';
+  background-image: url(/images/icons/tooltip-triangle.svg);
+  width: 14px;
+  height: 6px;
+  position:absolute;
+  bottom: 100%;
+  left: 133px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }

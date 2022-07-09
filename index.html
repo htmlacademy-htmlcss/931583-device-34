@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -39,6 +40,39 @@
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-user-cart" href="#">Корзина</a>
+
+              <!-- Popover Cart -->
+              <div class="popover-cart">
+                <h2 class="visually-hidden">Корзина товаров</h2>
+                <ul class="popover-cart-list">
+                  <li class="popover-cart-product">
+                    <a class="popover-product-link" href="#">
+                      <img class="popover-product-img" src="/images/catalog/product-1.jpg" width="39" height="43"
+                        alt="Селфи-палка">
+                      <h3 class="popover-product-title">Любительская селфи-палка</h3>
+                    </a>
+                    <button class="button-product-delete" type="button">
+                      <span class="visually-hidden">Удалить товар</span>
+                    </button>
+                  </li>
+                  <li class="popover-cart-product">
+                    <a class="popover-product-link" href="#">
+                      <img class="popover-product-img" src="/images/catalog/product-2.jpg" width="39" height="43"
+                        alt="Селфи-палка">
+                      <h3 class="popover-product-title">Профессиональная селфи-палка</h3>
+                    </a>
+                    <button class="button-product-delete" type="button">
+                      <span class="visually-hidden">Удалить товар</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="popover-total-wrap">
+                  <span class="popover-text-total">Товаров: 2</span>
+                  <span class="popover-text-total">Сумма: 2000 ₽</span>
+                </div>
+                <a class="button-popover-cart" href="#">Открыть корзину</a>
+              </div>
+
             </li>
           </ul>
         </div>
@@ -47,6 +81,37 @@
         <!-- Navigation Menu -->
         <div class="navigation-menu-container">
           <a class="navigation-menu-link navigation-catalog-link" href="catalog.html">Каталог товаров</a>
+
+          <!-- Popover Cart -->
+          <div class="popover-catalog">
+            <div class="popover-catalog-container">
+            <ul class="popover-category-list">
+              <li class="popover-category">
+                <a class="popover-category-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="popover-category">
+                <a class="popover-category-link" href="#">Моноподы для cелфи</a>
+              </li>
+              <li class="popover-category">
+                <a class="popover-category-link" href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="popover-category-list">
+              <li class="popover-category">
+                <a class="popover-category-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="popover-category">
+                <a class="popover-category-link" href="#">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="popover-category-list">
+              <li class="popover-category">
+                <a class="popover-category-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+            </div>
+          </div>
+
           <ul class="navigation-menu">
             <li class="navigation-menu-item">
               <a class="navigation-menu-link" href="#">Доставка</a>
@@ -548,6 +613,7 @@
       </div>
     </footer>
 
+    <!-- MODAL -->
     <div class="modal-container modal-container-hidden">
       <div class="modal modal-delivery">
         <form class="modal-delivery-form" method="post">
@@ -584,7 +650,8 @@
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                     <span class="visually-hidden">Дополнительная информация</span>
                   </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно.
+                    Привезём сколько получится по требованиям
                     к провозу багажа.</span>
                 </span>
               </span>

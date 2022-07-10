@@ -16,7 +16,7 @@
       <!-- Navigation -->
       <nav class="navigation">
         <a class="logo-link" href="index.html">
-          <img class="navigation-logo" src="/images/logo-header.svg" width="145" height="36"
+          <img class="navigation-logo" src="../images/logo-header.svg" width="145" height="36"
             alt="Логотип интернет-магазина Девайс">
         </a>
         <!-- Navigation User -->
@@ -42,7 +42,43 @@
               <a class="navigation-user-link navigation-user-compare" href="#">Сравнить</a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-user-cart" href="#">Корзина</a>
+              <a class="navigation-user-link navigation-user-cart" href="#">
+                <span class="navigation-cart-quantity">2</span>
+                Корзина
+              </a>
+
+              <!-- Popover Cart -->
+              <div class="popover-cart">
+                <h2 class="visually-hidden">Корзина товаров</h2>
+                <ul class="popover-cart-list">
+                  <li class="popover-cart-product">
+                    <a class="popover-product-link" href="#">
+                      <img class="popover-product-img" src="../images/catalog/product-1.jpg" width="39" height="43"
+                        alt="Селфи-палка">
+                      <h3 class="popover-product-title">Любительская селфи-палка</h3>
+                    </a>
+                    <button class="button-product-delete" type="button">
+                      <span class="visually-hidden">Удалить товар</span>
+                    </button>
+                  </li>
+                  <li class="popover-cart-product">
+                    <a class="popover-product-link" href="#">
+                      <img class="popover-product-img" src="../images/catalog/product-2.jpg" width="39" height="43"
+                        alt="Селфи-палка">
+                      <h3 class="popover-product-title">Профессиональная селфи-палка</h3>
+                    </a>
+                    <button class="button-product-delete" type="button">
+                      <span class="visually-hidden">Удалить товар</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="popover-total-wrap">
+                  <span class="popover-text-total">Товаров: 2</span>
+                  <span class="popover-text-total">Сумма: 2000 ₽</span>
+                </div>
+                <a class="button-popover-cart" href="#">Открыть корзину</a>
+              </div>
+
             </li>
           </ul>
         </div>
@@ -51,6 +87,37 @@
         <!-- Navigation Menu -->
         <div class="navigation-menu-container">
           <a class="navigation-menu-link navigation-catalog-link" href="#">Каталог товаров</a>
+
+          <!-- Popover Catalog -->
+          <div class="popover-catalog">
+            <div class="popover-catalog-container">
+              <ul class="popover-category-list">
+                <li class="popover-category">
+                  <a class="popover-category-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="popover-category">
+                  <a class="popover-category-link" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="popover-category">
+                  <a class="popover-category-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="popover-category-list">
+                <li class="popover-category">
+                  <a class="popover-category-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="popover-category">
+                  <a class="popover-category-link" href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="popover-category-list">
+                <li class="popover-category">
+                  <a class="popover-category-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <ul class="navigation-menu">
             <li class="navigation-menu-item">
               <a class="navigation-menu-link" href="#">Доставка</a>
@@ -212,8 +279,9 @@
                 <li class="product-item">
                   <a class="product-link" href="#">
                     <div class="product-image-wrap">
-                      <img class="product-image" src="/images/catalog/product-1.jpg" width="360" height="380"
+                      <img class="product-image" src="../images/catalog/product-1.jpg" width="360" height="380"
                         alt="Любительская селфи палка.">
+                      <span class="product-button">Подробнее</span>
                     </div>
                     <div class="product-text-wrap">
                       <h3 class="product-title">Любительская селфи-палка</h3>
@@ -224,8 +292,9 @@
                 <li class="product-item">
                   <a class="product-link" href="#">
                     <div class="product-image-wrap">
-                      <img class="product-image" src="/images/catalog/product-2.jpg" width="360" height="380"
+                      <img class="product-image" src="../images/catalog/product-2.jpg" width="360" height="380"
                         alt="Профессиональная селфи-палка.">
+                      <span class="product-button">Подробнее</span>
                     </div>
                     <div class="product-text-wrap">
                       <h3 class="product-title">Профессиональная селфи-палка </h3>
@@ -236,8 +305,9 @@
                 <li class="product-item">
                   <a class="product-link" href="#">
                     <div class="product-image-wrap">
-                      <img class="product-image" src="/images/catalog/product-3.jpg" width="360" height="380"
+                      <img class="product-image" src="../images/catalog/product-3.jpg" width="360" height="380"
                         alt="Непотопляемая селфи-палка.">
+                      <span class="product-button">Подробнее</span>
                     </div>
                     <div class="product-text-wrap">
                       <h3 class="product-title">Непотопляемая селфи-палка</h3>
@@ -248,8 +318,9 @@
                 <li class="product-item">
                   <a class="product-link" href="#">
                     <div class="product-image-wrap">
-                      <img class="product-image" src="/images/catalog/product-4.jpg" width="360" height="380"
+                      <img class="product-image" src="../images/catalog/product-4.jpg" width="360" height="380"
                         alt="Селфи-палка «Следуй за мной».">
+                      <span class="product-button">Подробнее</span>
                     </div>
                     <div class="product-text-wrap">
                       <h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
@@ -296,7 +367,7 @@
           <!-- Address -->
           <div class="footer-address">
             <a class="footer-logo-link" href="#">
-              <img class="footer-logo" src="/images/logo-footer.svg" width="145" height="36"
+              <img class="footer-logo" src="../images/logo-footer.svg" width="145" height="36"
                 alt="Логотип интернет-магазина Девайс">
             </a>
             <h3 class="visually-hidden">Адрес магазина</h3>
@@ -345,7 +416,7 @@
             <h3 class="visually-hidden">Номер телефона</h3>
             <a class="footer-phone-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
             <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-              <img class="logo-htmlacademy" src="/images/logo-htmlacademy.svg" width="115" height="33"
+              <img class="logo-htmlacademy" src="../images/logo-htmlacademy.svg" width="115" height="33"
                 alt="Логотип HTML Academy">
             </a>
           </div>

@@ -16,7 +16,7 @@
       <!-- Navigation -->
       <nav class="navigation">
         <a class="logo-link" href="index.html">
-          <img class="navigation-logo" src="/images/logo-header.svg" width="145" height="36"
+          <img class="navigation-logo" src="../images/logo-header.svg" width="145" height="36"
             alt="Логотип интернет-магазина Девайс">
         </a>
         <!-- Navigation User -->
@@ -39,7 +39,10 @@
               <a class="navigation-user-link navigation-user-compare" href="#">Сравнить</a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-user-cart" href="#">Корзина</a>
+              <a class="navigation-user-link navigation-user-cart" href="#">
+                <span class="navigation-cart-quantity">2</span>
+                Корзина
+              </a>
 
               <!-- Popover Cart -->
               <div class="popover-cart">
@@ -47,7 +50,7 @@
                 <ul class="popover-cart-list">
                   <li class="popover-cart-product">
                     <a class="popover-product-link" href="#">
-                      <img class="popover-product-img" src="/images/catalog/product-1.jpg" width="39" height="43"
+                      <img class="popover-product-img" src="../images/catalog/product-1.jpg" width="39" height="43"
                         alt="Селфи-палка">
                       <h3 class="popover-product-title">Любительская селфи-палка</h3>
                     </a>
@@ -57,7 +60,7 @@
                   </li>
                   <li class="popover-cart-product">
                     <a class="popover-product-link" href="#">
-                      <img class="popover-product-img" src="/images/catalog/product-2.jpg" width="39" height="43"
+                      <img class="popover-product-img" src="../images/catalog/product-2.jpg" width="39" height="43"
                         alt="Селфи-палка">
                       <h3 class="popover-product-title">Профессиональная селфи-палка</h3>
                     </a>
@@ -82,7 +85,7 @@
         <div class="navigation-menu-container">
           <a class="navigation-menu-link navigation-catalog-link" href="catalog.html">Каталог товаров</a>
 
-          <!-- Popover Cart -->
+          <!-- Popover Catalog -->
           <div class="popover-catalog">
             <div class="popover-catalog-container">
               <ul class="popover-category-list">
@@ -137,120 +140,109 @@
         <div class="page-container">
           <h2 class="visually-hidden">Слайдер с товарами</h2>
 
-          <!-- Slide 1 -->
           <div class="slider-container">
-            <div class="slider-image-wrap">
-
-              <!-- Slide 1 Image -->
-              <img class="slider-image" src="/images/slider/slider-1.png" width="560" height="560"
-                alt="Квадракоптер с мощным лазером">
-
-              <!-- Slide 2 Image -->
-              <img class="slider-image slide-hidden" src="/images/slider/slider-2.png" width="560" height="560"
-                alt="Фитнес-браслет">
-
-              <!-- Slide 3 Image -->
-              <img class="slider-image slide-hidden" src="/images/slider/slider-3.png" width="560" height="560"
-                alt="Селфи-палка">
-
-              <div class="toggle-button-wrap">
-                <button class="toggle-button toggle-button-prev" type="button">
-                  <span class="visually-hidden">Предыдущий слайд.</span>
-                </button>
-                <button class="toggle-button toggle-button-next" type="button">
-                  <span class="visually-hidden">Следующий слайд.</span>
-                </button>
+            <!-- Slide 1 -->
+            <div class="slide-wrapper">
+              <div class="slide-image-wrap">
+                <img class="slide-image" src="../images/slider/slider-1.png" width="560" height="560"
+                  alt="Квадракоптер с мощным лазером">
+              </div>
+              <div class="slide-content">
+                <span class="slide-number">01</span>
+                <b class="slide-slogan">Порхает как бабочка, жалит как пчела!</b>
+                <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                  замаскированным под стандартную камеру.</p>
+                <a class="button-link" href="#">Подробнее</a>
+                <dl class="slide-spec">
+                  <div class="slide-spec-wrap">
+                    <dt class="slide-spec-term">Дальность полета</dt>
+                    <dd class="slide-spec-desc">800м</dd>
+                  </div>
+                  <div class="slide-spec-wrap">
+                    <dt class="slide-spec-term">Радиус поражения</dt>
+                    <dd class="slide-spec-desc">50м</dd>
+                  </div>
+                </dl>
               </div>
             </div>
-
-            <div class="slider-content-wrap">
-
-              <!-- Slide 1 -->
-              <div class="slider-content">
-                <span class="slider-number">01</span>
-                <b class="slider-slogan">Порхает как бабочка, жалит как пчела!</b>
-                <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-                  замаскированным под стандартную камеру.</p>
+            <!-- Slide 2 -->
+            <div class="slide-wrapper slide-hidden">
+              <div class="slide-image-wrap">
+                <img class="slide-image" src="../images/slider/slider-2.png" width="560" height="560"
+                  alt="Фитнес-браслет">
               </div>
-
-              <!-- Slide 2 -->
-              <div class="slider-content slide-hidden">
-                <span class="slider-number">02</span>
-                <b class="slider-slogan">Худеем правильно!</b>
-                <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+              <div class="slide-content">
+                <span class="slide-number">02</span>
+                <b class="slide-slogan">Худеем правильно!</b>
+                <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
                   занятия
                   и соблюдать диету.</p>
-              </div>
-
-              <!-- Slide 3 -->
-              <div class="slider-content slide-hidden">
-                <span class="slider-number">03</span>
-                <b class="slider-slogan">Делай селфи,как Бен Стиллер! </b>
-                <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
-                  Карл!) метров длиной и весом всего 5 кг.</p>
-              </div>
-
-              <div class="slider-buttons-container">
                 <a class="button-link" href="#">Подробнее</a>
-                <ol class="slider-flip-list">
-                  <li class="slider-flip-item">
-                    <button class="slider-flip-button slider-flip-current" type="button">
-                      <span class="visually-hidden">1 слайд.</span>
-                    </button>
-                  </li>
-                  <li class="slider-flip-item">
-                    <button class="slider-flip-button" type="button">
-                      <span class="visually-hidden">2 слайд.</span>
-                    </button>
-                  </li>
-                  <li class="slider-flip-item">
-                    <button class="slider-flip-button" type="button">
-                      <span class="visually-hidden">3 слайд.</span>
-                    </button>
-                  </li>
-                </ol>
+                <dl class="slide-spec">
+                  <div class="slide-spec-wrap">
+                    <dt class="slide-spec-term">Без подзарядки</dt>
+                    <dd class="slide-spec-desc">48 часов</dd>
+                  </div>
+                </dl>
               </div>
-
-              <!-- Slide 1 specification -->
-              <dl class="slider-spec">
-                <div class="slider-spec-wrap">
-                  <dt class="slider-spec-term">Дальность полета</dt>
-                  <dd class="slider-spec-desc">800м</dd>
-                </div>
-                <div class="slider-spec-wrap">
-                  <dt class="slider-spec-term">Радиус поражения</dt>
-                  <dd class="slider-spec-desc">50м</dd>
-                </div>
-              </dl>
-
-              <!-- Slide 2 specification -->
-              <dl class="slider-spec slide-hidden">
-                <div class="slider-spec-wrap">
-                  <dt class="slider-spec-term">Без подзарядки</dt>
-                  <dd class="slider-spec-desc">48 часов</dd>
-                </div>
-              </dl>
-
-              <!-- Slide 3 specification -->
-              <dl class="slider-spec slide-hidden">
-                <div class="slider-spec-wrap">
-                  <dt class="slider-spec-term">Длина палки</dt>
-                  <dd class="slider-spec-desc">8,5 м</dd>
-                </div>
-                <div class="slider-spec-wrap">
-                  <dt class="slider-spec-term">Вес палки</dt>
-                  <dd class="slider-spec-desc">5 кг</dd>
-                </div>
-                <div class="slider-spec-wrap">
-                  <dt class="slider-spec-term">Материал</dt>
-                  <dd class="slider-spec-desc">Карбон</dd>
-                </div>
-              </dl>
-
             </div>
-          </div>
+            <!-- Slide 3 -->
+            <div class="slide-wrapper slide-hidden">
+              <div class="slide-image-wrap">
+                <img class="slide-image" src="../images/slider/slider-3.png" width="560" height="560" alt="Селфи-палка">
+              </div>
+              <div class="slide-content">
+                <span class="slide-number">03</span>
+                <b class="slide-slogan">Делай селфи,как Бен Стиллер! </b>
+                <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
+                  Карл!) метров длиной и весом всего 5 кг.</p>
+                <a class="button-link" href="#">Подробнее</a>
+                <dl class="slide-spec">
+                  <div class="slide-spec-wrap">
+                    <dt class="slide-spec-term">Длина палки</dt>
+                    <dd class="slide-spec-desc">8,5 м</dd>
+                  </div>
+                  <div class="slide-spec-wrap">
+                    <dt class="slide-spec-term">Вес палки</dt>
+                    <dd class="slide-spec-desc">5 кг</dd>
+                  </div>
+                  <div class="slide-spec-wrap">
+                    <dt class="slide-spec-term">Материал</dt>
+                    <dd class="slide-spec-desc">Карбон</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
 
-        </div>
+            <!-- Buttons -->
+            <div class="toggle-buttons-wrap">
+              <button class="toggle-button toggle-button-prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд.</span>
+              </button>
+              <button class="toggle-button toggle-button-next" type="button">
+                <span class="visually-hidden">Следующий слайд.</span>
+              </button>
+            </div>
+
+            <ol class="slider-flip-list">
+              <li class="slider-flip-item">
+                <button class="slider-flip-button slider-flip-current" type="button">
+                  <span class="visually-hidden">1 слайд.</span>
+                </button>
+              </li>
+              <li class="slider-flip-item">
+                <button class="slider-flip-button" type="button">
+                  <span class="visually-hidden">2 слайд.</span>
+                </button>
+              </li>
+              <li class="slider-flip-item">
+                <button class="slider-flip-button" type="button">
+                  <span class="visually-hidden">3 слайд.</span>
+                </button>
+              </li>
+            </ol>
+
+          </div>
       </section>
 
       <!-- Popular Directory -->
@@ -420,13 +412,13 @@
                 к вашему подъезду совершенно бесплатно! Ведь
                 мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
-            <div class="advantages-content advantages-content-guarantee visually-hidden">
+            <div class="advantages-content advantages-content-guarantee advantages-content-hidden">
               <h3 class="advantages-title">Гарантия</h3>
               <p class="advantages-desc">Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно! Ведь
                 мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
-            <div class="advantages-content advantages-content-credit advantages-content-hidden visually-hidden">
+            <div class="advantages-content advantages-content-credit advantages-content-hidden">
               <h3 class="advantages-title">Кредит</h3>
               <p class="advantages-desc">Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно! Ведь
@@ -455,15 +447,9 @@
                 компаниями:
               </p>
               <ul class="info-delivery-list">
-                <li class="info-delivery-item">
-                  <a class="info-delivery-link" href="#">Меловые линии</a>
-                </li>
-                <li class="info-delivery-item">
-                  <a class="info-delivery-link" href="#">Сдик</a>
-                </li>
-                <li class="info-delivery-item">
-                  <a class="info-delivery-link" href="#">ТоксБерри</a>
-                </li>
+                <li class="info-delivery-item">Меловые линии</li>
+                <li class="info-delivery-item">Сдик</li>
+                <li class="info-delivery-item">ТоксБерри</li>
               </ul>
               <a class="button-link" href="#">Подробнее о нас</a>
             </article>
@@ -515,7 +501,7 @@
           <!-- Address -->
           <div class="footer-address">
             <a class="footer-logo-link" href="#">
-              <img class="footer-logo" src="/images/logo-footer.svg" width="145" height="36"
+              <img class="footer-logo" src="../images/logo-footer.svg" width="145" height="36"
                 alt="Логотип интернет-магазина Девайс">
             </a>
             <h3 class="visually-hidden">Адрес магазина</h3>
@@ -564,7 +550,7 @@
             <h3 class="visually-hidden">Номер телефона</h3>
             <a class="footer-phone-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
             <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-              <img class="logo-htmlacademy" src="/images/logo-htmlacademy.svg" width="115" height="33"
+              <img class="logo-htmlacademy" src="../images/logo-htmlacademy.svg" width="115" height="33"
                 alt="Логотип HTML Academy">
             </a>
           </div>

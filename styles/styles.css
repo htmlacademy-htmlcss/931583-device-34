@@ -163,7 +163,7 @@ img {
   position: relative;
 }
 
-.navigation-user-right .navigation-user-item:not(:nth-child(odd)) {
+.navigation-user-right .navigation-user-item {
   margin-left: 36px;
 }
 
@@ -327,7 +327,8 @@ input[type="search"]::-webkit-search-cancel-button {
   position: absolute;
   top: 0;
   left: -18px;
-  width: 21px;
+  min-width: 21px;
+  max-width: 34px;
   height: 21px;
   display: flex;
   align-items: center;
@@ -337,6 +338,9 @@ input[type="search"]::-webkit-search-cancel-button {
   font-size: 14px;
   line-height: 17px;
   text-align: center;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 
@@ -411,6 +415,7 @@ input[type="search"]::-webkit-search-cancel-button {
   background: url('../images/icons/cross.svg') center no-repeat;
   opacity: 0.3;
   content: '';
+  z-index: 2;
 }
 
 /* active catalog */
@@ -455,7 +460,6 @@ input[type="search"]::-webkit-search-cancel-button {
 .slider {
   position: relative;
   top: -15px;
-  z-index: -1;
   margin-bottom: 55px;
 }
 
@@ -494,13 +498,17 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .slide-number {
   position: absolute;
-  top: 82px;
+  top: 7px;
   right: 49px;
+  max-width: 250px;
   font-family: 'Rubik';
   font-size: 180px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 180px;
   color: #ffffff;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .slide-slogan {
@@ -1165,17 +1173,20 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .footer-links-list {
-  height: 27px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 56px;
   padding: 0;
   list-style-type: none;
 }
 
+.footer-links-item {
+  margin-bottom: 56px;
+}
+
 .footer-link {
+  padding-bottom: 6px;
   display: block;
   font-family: 'Raleway';
   font-weight: 800;
@@ -1198,6 +1209,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .footer-link:focus-visible {
+  padding-bottom: 0;
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }

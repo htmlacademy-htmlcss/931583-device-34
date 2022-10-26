@@ -23,8 +23,7 @@ const flips = document.querySelectorAll('.slider-flip-button');
 
 let slideIndex = 0;
 
-// showSlides(slideIndex);
-setInterval(() => showSlides(slideIndex += 1), 3000);
+setInterval(() => showSlides(slideIndex += 1), 5000);
 
 btnNext.addEventListener('click', () => {
   showSlides(slideIndex += 1);
@@ -63,3 +62,28 @@ function showSlides(n) {
   slides[slideIndex].classList.remove('slide-hidden');
   flips[slideIndex].classList.add('slider-flip-current');
 };
+
+// Слайдер преимуществ
+
+const advantagesItems = document.querySelectorAll('.advantages-button-item');
+const advantagesButtoms = document.querySelectorAll('.advantages-button');
+const advantagesContents = document.querySelectorAll('.advantages-content');
+
+let advantagesIndex = 0;
+
+advantagesButtoms.forEach((item, index) => {
+  item.addEventListener('click', () => {
+    for (let item of advantagesButtoms) {
+      item.classList.remove('advantages-button-current');
+    }
+    for (let content of advantagesContents) {
+      content.classList.add('advantages-content-hidden');
+    }
+    for (let content of advantagesItems) {
+      content.classList.remove('advantages-item-current');
+    }
+    advantagesButtoms[index].classList.add('advantages-button-current');
+    advantagesContents[index].classList.remove('advantages-content-hidden');
+    advantagesItems[index].classList.add('advantages-item-current');
+  })
+});

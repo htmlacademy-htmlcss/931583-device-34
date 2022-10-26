@@ -783,6 +783,11 @@ input[type="search"]::-webkit-search-cancel-button {
   outline-offset: 2px;
 }
 
+.advantages-button {
+  border: none;
+  cursor: pointer;
+}
+
 .advantages-content {
   padding: 73px 63px 72px 116px;
   flex-grow: 1;

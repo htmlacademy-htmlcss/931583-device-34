@@ -76,7 +76,7 @@ img {
 .button-link {
   display: block;
   padding: 10px 0;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -152,18 +152,18 @@ img {
 }
 
 .navigation-user-left {
-  max-width: 780px;
+  width: 780px;
 }
 
 .navigation-user-right {
-  max-width: 290px;
+  max-width: 260px;
 }
 
 .navigation-user-item {
   position: relative;
 }
 
-.navigation-user-right .navigation-user-item {
+.navigation-user-right .navigation-user-item:not(:first-child) {
   margin-left: 36px;
 }
 
@@ -371,7 +371,7 @@ input[type="search"]::-webkit-search-cancel-button {
   padding: 4px 0;
   display: block;
   color: #000000;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -449,7 +449,7 @@ input[type="search"]::-webkit-search-cancel-button {
 /* MAIN */
 
 .main-title {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -484,7 +484,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* hide slide */
 .slide-wrapper.slide-hidden {
-  display: none
+  display: none;
 }
 
 .slide-content {
@@ -501,7 +501,7 @@ input[type="search"]::-webkit-search-cancel-button {
   top: 7px;
   right: 49px;
   max-width: 250px;
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-size: 180px;
   font-weight: 700;
   line-height: 180px;
@@ -513,7 +513,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .slide-slogan {
   display: block;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -721,7 +721,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .popular-directory-title {
   margin: 0;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -807,7 +807,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .advantages-title {
   width: 452px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -837,7 +837,7 @@ input[type="search"]::-webkit-search-cancel-button {
   padding: 40px 125px;
   background-color: #f0f0f0;
   color: #000000;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 20px;
   line-height: 20px;
@@ -913,7 +913,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .info-title {
   margin-top: 0;
   margin-bottom: 48px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -1016,7 +1016,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .newsletter-title {
   max-width: 400px;
   margin: 0;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -1036,7 +1036,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .newsletter-button {
   padding: 15px 36px;
   border: 3px solid #c4c4c4;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -1188,7 +1188,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .footer-link {
   padding-bottom: 6px;
   display: block;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -1344,7 +1344,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .breadcrumbs-title {
   margin-top: 0;
   margin-bottom: 16px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -1395,7 +1395,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .filter-title {
   margin-top: 0;
   margin-bottom: 58px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
@@ -1409,7 +1409,7 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-bottom: 18px;
   padding-top: 12px;
   border-top: 2px solid #000000;
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -1543,7 +1543,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .control-checkbox .control-label {
   margin-bottom: 18px;
   padding-left: 36px;
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -1595,7 +1595,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .control-radio .control-label {
   margin-bottom: 20px;
   padding-left: 36px;
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -1651,7 +1651,7 @@ input[type="search"]::-webkit-search-cancel-button {
   width: 100%;
   cursor: pointer;
   padding: 10px 0;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -1693,7 +1693,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .sorting-title {
   margin-right: 204px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
@@ -1846,7 +1846,7 @@ input[type="search"]::-webkit-search-cancel-button {
   height: 40px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 16px, #ffe17f 16px, #ffe17f 24px, rgba(255, 255, 255, 0) 24px);
   color: #000000;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -1877,7 +1877,7 @@ input[type="search"]::-webkit-search-cancel-button {
   padding: 17px 0;
   border: 3px solid #e5e5e5;
   background: none;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
@@ -1925,7 +1925,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .pagination-link {
   padding: 25px;
   color: #000000;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -2040,7 +2040,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .modal-title {
   margin: 0;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -2131,7 +2131,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .modal-button {
   width: 200px;
   padding: 10px 5px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -2297,7 +2297,7 @@ input[type="search"]::-webkit-search-cancel-button {
   background-color: #000000;
   z-index: 1;
   color: #ffffff;
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2443,7 +2443,7 @@ input[type="search"]::-webkit-search-cancel-button {
   display: block;
   padding: 14.5px 25px;
   margin: 20px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;

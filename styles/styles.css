@@ -2337,6 +2337,7 @@ input[type="search"]::-webkit-search-cancel-button {
   background-color: #000000;
   color: #ffffff;
   display: none;
+  z-index: 5;
 }
 
 .popover-cart::before {

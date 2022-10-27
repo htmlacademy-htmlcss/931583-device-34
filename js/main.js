@@ -14,6 +14,39 @@ popoverCatalog.addEventListener('mouseleave', () => {
   catalogLink.classList.remove('navigation-catalog-active');
 });
 
+// Открытие поповера корзины при наведении
+const cartLink = document.querySelector('.navigation-user-cart');
+const popoverCart = document.querySelector('.popover-cart');
+
+cartLink.addEventListener('mouseenter', () => {
+  popoverCart.classList.add('popover-cart-open');
+});
+
+popoverCart.addEventListener('mouseleave', () => {
+  popoverCart.classList.remove('popover-cart-open');
+});
+
+// Модальное окно доставки под заказ
+const infoLink = document.querySelector('.info-aside-link');
+const deliveryModal = document.querySelector('.modal-container');
+const buttonClosingModal = document.querySelector('.modal-close-button');
+
+const openModal = (e) => {
+
+  if (deliveryModal.classList.contains('modal-container-hidden')) {
+    deliveryModal.classList.remove('modal-container-hidden');
+
+    infoLink.removeEventListener('click', openModal);
+    buttonClosingModal.addEventListener('click', openModal);
+  } else {
+    deliveryModal.classList.add('modal-container-hidden');
+
+    buttonClosingModal.removeEventListener('click', openModal);
+    infoLink.addEventListener('click', openModal);
+  }
+};
+
+infoLink.addEventListener('click', openModal);
 
 // Сладер
 const slides = document.querySelectorAll('.slide-wrapper');
